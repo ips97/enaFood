@@ -15,8 +15,8 @@ Considerando as fases do projeto informadas, há um limite de quantidade de iten
 De ter o MongoDB instalado na máquina ou a URL do MongoAtlas inserida como Variável de Ambiente.
 
 E configurar as Variavéis de Ambiente dentro do arquivo .env:
-NODE_ENV (para definir se o ambiente do sistema é "development" ou "production", se for production será necessário informar o URL do Mongo Atlas para conexão com o banco de dados)
-URL_MONGO (para definir a URL do MongoAtlas)
+NODE_ENV (para definir se o ambiente do sistema é "development" ou "production", se for production será necessário informar o URL do Mongo Atlas para conexão com o banco de dados).
+URL_MONGO (para definir a URL do MongoAtlas).
 QTD_CARRINHO (para definir a quantidade de itens que serão permitidos por pedido, mediante a fase do projeto)
 
 ## Como Utilizar A API
