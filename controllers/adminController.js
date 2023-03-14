@@ -154,7 +154,7 @@ const allAdmin = (req, res)=>{
 // ProdutoModel
 const addProduto = (req, res)=>{
 
-    const {nome, codBarra, categoria, valor} = req.body.produto
+    const {nome, codBarra, categoria, valor, estoque} = req.body.produto
 
     Produto.findOne({codBarra: codBarra}).then(produto=>{
         if(produto){
@@ -216,11 +216,14 @@ const deleteProduto = (req, res)=>{
 
 const updateProduto = (req, res)=>{
 
-    const {nome, codBarra, categoria, valor} = req.body.produto
+    const {nome, codBarra, categoria, valor, estoque} = req.body.produto
 
     Produto.findOne({codBarra: codBarra}).then(produto =>{
         if(nome != produto.nome){
             produto.nome = nome
+        }
+        if(estoque != produto.estoque){
+            produto.estoque = estoque
         }
         if(categoria != produto.categoria){
             produto.categoria = categoria
